@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        " os",
+        " to",
+        "t  "
+    ],
+    "key":
+    {
+        "o":
+        {
+            "item": "necromancymod:onyxgem"
+        },
+        "s":
+        {
+            "item": "minecraft:skull",
+            "data": 1
+        },
+        "t":
+        {
+            "type": "forge:ore_dict",
+            "ore": "minecraft:stick"
+        }
+    },
+    "result":
+    {
+        "item": "necromancymod:necromancersstaff"
+    }
+}

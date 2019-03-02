@@ -4,6 +4,8 @@ import net.minecraft.item.Item;
 
 public class ItemNecromancersStaff extends Item {
 
+    public static final String ID = "necromancersstaff";
+
     public ItemNecromancersStaff() {
 
     }

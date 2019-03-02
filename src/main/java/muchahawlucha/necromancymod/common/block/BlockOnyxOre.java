@@ -4,4 +4,6 @@ import net.minecraft.block.BlockOre;
 
 public class BlockOnyxOre extends BlockOre {
 
+    public static final String ID = "onyxore";
+
 }
