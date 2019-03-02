@@ -1,6 +1,5 @@
-package muchahawlucha.necromancy;
+package muchahawlucha.necromancymod;
 
-import net.minecraft.init.Blocks;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -25,6 +24,6 @@ public class NecromancyMod
     @EventHandler
     public void init(FMLInitializationEvent event)
     {
-        
+
     }
 }
