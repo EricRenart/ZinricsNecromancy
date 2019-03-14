@@ -6,5 +6,8 @@ public class ItemOnyxGem extends Item {
 
     public static final String ID = "onyxgem";
 
+    public ItemOnyxGem() {
+
+    }
 
 }
