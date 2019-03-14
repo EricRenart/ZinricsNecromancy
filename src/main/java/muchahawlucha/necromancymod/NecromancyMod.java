@@ -21,7 +21,9 @@ public class NecromancyMod
     public static CommonProxy proxy;
 
     // this mod's singleton instance
+    @Mod.Instance
     public static NecromancyMod nmInstance;
+
     public static Logger logger;
 
 
