@@ -2,6 +2,7 @@ package muchahawlucha.necromancymod.common.item;
 
 import com.mojang.realmsclient.gui.ChatFormatting;
 import muchahawlucha.necromancymod.NecromancyMod;
+import muchahawlucha.necromancymod.proxy.ClientProxy;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.creativetab.CreativeTabs;
@@ -26,7 +27,7 @@ public class ItemNecromancersStaff extends Item {
     public ItemNecromancersStaff() {
         setRegistryName("necromancersstaff");
         setUnlocalizedName(NecromancyMod.MODID + ".necromancersstaff");
-        setCreativeTab(CreativeTabs.MISC);
+        setCreativeTab(ClientProxy.creativeTab);
     }
 
 

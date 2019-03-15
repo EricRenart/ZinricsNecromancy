@@ -2,6 +2,7 @@ package muchahawlucha.necromancymod.common.block;
 
 import com.mojang.realmsclient.gui.ChatFormatting;
 import muchahawlucha.necromancymod.NecromancyMod;
+import muchahawlucha.necromancymod.proxy.ClientProxy;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockOre;
 import net.minecraft.block.material.Material;
@@ -23,7 +24,7 @@ public class BlockOnyxOre extends Block {
         super(Material.ROCK);
         this.setRegistryName("onyxore");
         this.setUnlocalizedName(NecromancyMod.MODID + ".onyxore");
-        this.setCreativeTab(CreativeTabs.MATERIALS);
+        this.setCreativeTab(ClientProxy.creativeTab);
     }
 
     @Override

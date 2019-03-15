@@ -1,5 +1,6 @@
 package muchahawlucha.necromancymod.proxy;
 
+import muchahawlucha.necromancymod.client.NecromancyTab;
 import muchahawlucha.necromancymod.common.CommonProxy;
 import muchahawlucha.necromancymod.common.block.ModBlocks;
 import muchahawlucha.necromancymod.common.item.ModItems;
@@ -13,6 +14,10 @@ import net.minecraftforge.fml.relauncher.Side;
 
 @Mod.EventBusSubscriber(Side.CLIENT)
 public class ClientProxy extends CommonProxy {
+
+    // custom tab
+    public static final NecromancyTab creativeTab = new NecromancyTab();
+
 
     @Override
     public void preInit(FMLPreInitializationEvent e) {

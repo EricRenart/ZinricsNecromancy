@@ -1,5 +1,6 @@
 package muchahawlucha.necromancymod;
 
+import muchahawlucha.necromancymod.client.NecromancyTab;
 import muchahawlucha.necromancymod.common.CommonProxy;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -26,6 +27,7 @@ public class NecromancyMod
     public static NecromancyMod instance;
 
     public static Logger logger;
+
 
 
     @Mod.EventHandler

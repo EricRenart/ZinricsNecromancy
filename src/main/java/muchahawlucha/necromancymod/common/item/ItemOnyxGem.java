@@ -2,6 +2,8 @@ package muchahawlucha.necromancymod.common.item;
 
 import com.mojang.realmsclient.gui.ChatFormatting;
 import muchahawlucha.necromancymod.NecromancyMod;
+import muchahawlucha.necromancymod.client.NecromancyTab;
+import muchahawlucha.necromancymod.proxy.ClientProxy;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.creativetab.CreativeTabs;
@@ -20,7 +22,7 @@ public class ItemOnyxGem extends Item {
     public ItemOnyxGem() {
         setRegistryName("onyxgem");
         setUnlocalizedName(NecromancyMod.MODID + ".onyxgem");
-        setCreativeTab(CreativeTabs.MISC);
+        setCreativeTab(ClientProxy.creativeTab);
     }
 
     @Override
