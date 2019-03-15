@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "layer0": "necromancymod:blocks/onyxore"
+  }
+}

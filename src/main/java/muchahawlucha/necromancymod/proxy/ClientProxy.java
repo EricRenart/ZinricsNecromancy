@@ -1,6 +1,8 @@
 package muchahawlucha.necromancymod.proxy;
 
 import muchahawlucha.necromancymod.common.CommonProxy;
+import muchahawlucha.necromancymod.common.block.ModBlocks;
+import muchahawlucha.necromancymod.common.item.ModItems;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -29,6 +31,7 @@ public class ClientProxy extends CommonProxy {
 
     @SubscribeEvent
     public static void registerModels(ModelRegistryEvent e) {
-
+        ModBlocks.initModels();
+        ModItems.initModels();
     }
 }
