@@ -29,6 +29,7 @@ public class CommonProxy {
     // filename of configuration file
     private static final String CONFIG_FILENAME = "zinricsnecromancy.cfg";
 
+    @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent e) {
         // register ore generator
         GameRegistry.registerWorldGenerator(new ModWorldGen(),3);
@@ -39,10 +40,12 @@ public class CommonProxy {
         Config.readConfig();
     }
 
+    @Mod.EventHandler
     public void init(FMLInitializationEvent e) {
 
     }
 
+    @Mod.EventHandler
     public void postInit(FMLPostInitializationEvent e) {
         if(config.hasChanged()) {
             config.save();

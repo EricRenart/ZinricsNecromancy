@@ -22,7 +22,7 @@ public class ModWorldGen implements IWorldGenerator {
     }
 
     private void generateOverworld(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) {
-        generateOre(ModBlocks.onyxOre.getDefaultState(), world, random, 16*chunkX, 16*chunkZ, 1, 32, 1 + random.nextInt(2), 4);
+        generateOre(ModBlocks.onyxOre.getDefaultState(), world, random, 16*chunkX, 16*chunkZ, 1, 16, 3 + random.nextInt(4), 4);
     }
 
     private void generateOre(IBlockState ore, World world, Random random, int x, int z, int yMin, int yMax, int size, int chances) {
