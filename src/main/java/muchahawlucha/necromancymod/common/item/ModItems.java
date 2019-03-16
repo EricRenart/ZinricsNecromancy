@@ -15,10 +15,15 @@ public class ModItems {
     @GameRegistry.ObjectHolder("necromancymod:onyxgem")
     public static ItemOnyxGem onyxGem;
 
+    // Basic Soul Gem
+    @GameRegistry.ObjectHolder("necromancymod:soulgem")
+    public static ItemSoulGemBase soulGem;
+
     @SideOnly(Side.CLIENT)
     public static void initModels() {
         necromancersStaff.initModel();
         onyxGem.initModel();
+        soulGem.initModel();
     }
 
 }

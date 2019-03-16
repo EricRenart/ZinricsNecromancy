@@ -25,12 +25,6 @@ public class ItemOnyxGem extends Item {
         setCreativeTab(ClientProxy.creativeTab);
     }
 
-    @Override
-    public void addInformation(ItemStack stack, @Nullable World worldIn, List<String> tooltip, ITooltipFlag flagIn) {
-        super.addInformation(stack, worldIn, tooltip, flagIn);
-        stack.setStackDisplayName(ChatFormatting.LIGHT_PURPLE + getItemStackDisplayName(new ItemStack(this)));
-    }
-
     @SideOnly(Side.CLIENT)
     public void initModel() {
         ModelLoader.setCustomModelResourceLocation(this, 0, new ModelResourceLocation(getRegistryName(), "inventory"));

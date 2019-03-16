@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        "ooo",
+        "oso",
+        "ooo"
+    ],
+    "key":
+    {
+        "o":
+        {
+            "item": "necromancymod:onyxgem"
+        },
+        "s":
+        {
+            "item": "minecraft:soul_sand"
+        }
+    },
+    "result":
+    {
+        "item": "necromancymod:soulgem"
+    }
+}
