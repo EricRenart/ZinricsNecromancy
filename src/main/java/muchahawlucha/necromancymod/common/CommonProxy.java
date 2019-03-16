@@ -5,6 +5,8 @@ import muchahawlucha.necromancymod.common.block.ModBlocks;
 import muchahawlucha.necromancymod.common.item.ItemNecromancersStaff;
 import muchahawlucha.necromancymod.common.item.ItemOnyxGem;
 import muchahawlucha.necromancymod.common.item.ItemSoulGemBase;
+import muchahawlucha.necromancymod.common.item.ItemSoulGemFilled;
+import muchahawlucha.necromancymod.common.soul.EnumSoulType;
 import muchahawlucha.necromancymod.common.world.ModWorldGen;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -67,5 +69,6 @@ public class CommonProxy {
         e.getRegistry().register(new ItemNecromancersStaff());
         e.getRegistry().register(new ItemOnyxGem());
         e.getRegistry().register(new ItemSoulGemBase());
+        e.getRegistry().register(new ItemSoulGemFilled(EnumSoulType.EMPTY_SOUL));
     }
 }

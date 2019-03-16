@@ -50,11 +50,6 @@ public class BlockOnyxOre extends Block {
         return 1 + fortune + random.nextInt(2);
     }
 
-    @Override
-    public void addInformation(ItemStack stack, @Nullable World player, List<String> tooltip, ITooltipFlag advanced) {
-        super.addInformation(stack, player, tooltip, advanced);
-        stack.setStackDisplayName(ChatFormatting.LIGHT_PURPLE + new ItemStack(Item.getItemFromBlock(this)).getDisplayName());
-    }
 
     @SideOnly(Side.CLIENT)
     public void initModel() {

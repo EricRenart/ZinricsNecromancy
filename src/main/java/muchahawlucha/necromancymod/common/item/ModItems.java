@@ -19,11 +19,16 @@ public class ModItems {
     @GameRegistry.ObjectHolder("necromancymod:soulgem")
     public static ItemSoulGemBase soulGem;
 
+    // Filled Soul Gem
+    @GameRegistry.ObjectHolder("necromancymod:soulgemfilled")
+    public static ItemSoulGemFilled soulGemFilled;
+
     @SideOnly(Side.CLIENT)
     public static void initModels() {
         necromancersStaff.initModel();
         onyxGem.initModel();
         soulGem.initModel();
+        soulGemFilled.initModel();
     }
 
 }

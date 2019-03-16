@@ -21,20 +21,17 @@ import java.util.List;
 
 public class ItemSoulGemBase extends Item {
 
-    // The Soul that this Soul Gem is currently holding
     Soul currentSoul;
 
     public ItemSoulGemBase() {
-        currentSoul = new Soul();
-        setRegistryName("soulgem");
-        setUnlocalizedName(NecromancyMod.MODID + ".soulgem");
-        setCreativeTab(ClientProxy.creativeTab);
-    }
-
-    public ItemSoulGemBase(EnumSoulType initSoul) {
-        currentSoul = new Soul(initSoul);
-        setRegistryName("soulgem");
-        setUnlocalizedName(NecromancyMod.MODID + ".soulgem");
+        currentSoul = new Soul(EnumSoulType.EMPTY_SOUL);
+        if(this instanceof ItemSoulGemFilled) {
+            setRegistryName("soulgemfilled");
+            setUnlocalizedName(NecromancyMod.MODID + ".soulgemfilled");
+        } else {
+            setRegistryName("soulgem");
+            setUnlocalizedName(NecromancyMod.MODID + ".soulgem");
+        }
         setCreativeTab(ClientProxy.creativeTab);
     }
 
@@ -42,15 +39,9 @@ public class ItemSoulGemBase extends Item {
     public void addInformation(ItemStack stack, @Nullable World worldIn, List<String> tooltip, ITooltipFlag flagIn) {
         super.addInformation(stack, worldIn, tooltip, flagIn);
         stack.setStackDisplayName(ChatFormatting.AQUA + getItemStackDisplayName(new ItemStack(this)));
-        String soulTooltip;
-        if(currentSoul.getType() == null) {
-            soulTooltip = "NULL";
-            NecromancyMod.logger.log(Level.ERROR, "Soul type is null for this gem");
+        if(!(this instanceof ItemSoulGemFilled)) {
+            tooltip.add("No current soul");
         }
-        else {
-            soulTooltip = "Soul: " + currentSoul.getSoulName();
-        }
-        tooltip.add(soulTooltip);
     }
 
     @SideOnly(Side.CLIENT)

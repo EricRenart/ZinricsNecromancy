@@ -13,8 +13,66 @@ public class Soul {
         type = initType;
     }
 
-    // Gets the Display Name of this soul.
     public String getSoulName() {
+        switch(type) {
+
+            case EMPTY_SOUL:
+                return "empty";
+            case SOUL_PIG:
+                return "pig";
+            case SOUL_COW:
+                return "cow";
+            case SOUL_CHICKEN:
+                return "chicken";
+            case SOUL_SHEEP:
+                return "sheep";
+            case SOUL_HORSE:
+                return "horse";
+            case SOUL_PARROT:
+                return "parrot";
+            case SOUL_SQUID:
+                return "squid";
+            case SOUL_OCELOT:
+                return "ocelot";
+            case SOUL_WOLF:
+                return "wolf";
+            case SOUL_SPIDER:
+                return "spider";
+            case SOUL_ZOMBIE:
+                return "zombie";
+            case SOUL_SKELETON:
+                return "skeleton";
+            case SOUL_WITHER_SKELETON:
+                return "wither_skeleton";
+            case SOUL_ZOMBIE_PIGMAN:
+                return "zombie_pigman";
+            case SOUL_BLAZE:
+                return "blaze";
+            case SOUL_GHAST:
+                return "ghast";
+            case SOUL_CREEPER:
+                return "creeper";
+            case SOUL_ENDERMAN:
+                return "enderman";
+            case SOUL_GUARDIAN:
+                return "guardian";
+            case SOUL_SILVERFISH:
+                return "silverfish";
+            case SOUL_ENDER_DRAGON:
+                return "ender_dragon";
+            case SOUL_VILLAGER:
+                return "villager";
+            case SOUL_ZOMBIE_VILLAGER:
+                return "zombie_villager";
+            case SOUL_ILLAGER:
+                return "illager";
+            default:
+                return null;
+        }
+    }
+
+    // Gets the Display Name of this soul.
+    public String getSoulDisplayName() {
         switch(type) {
 
             case EMPTY_SOUL:
