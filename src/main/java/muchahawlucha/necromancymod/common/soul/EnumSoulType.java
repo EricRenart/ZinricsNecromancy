@@ -29,5 +29,8 @@ public enum EnumSoulType {
     SOUL_ENDER_DRAGON,
     SOUL_VILLAGER,
     SOUL_ZOMBIE_VILLAGER,
-    SOUL_ILLAGER
+    SOUL_ILLAGER,
+
+    // This mod's mobs
+    SOUL_NECROMANCER,
 }

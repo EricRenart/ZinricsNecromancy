@@ -66,6 +66,8 @@ public class Soul {
                 return "zombie_villager";
             case SOUL_ILLAGER:
                 return "illager";
+            case SOUL_NECROMANCER:
+                return "necromancer";
             default:
                 return null;
         }
@@ -125,6 +127,8 @@ public class Soul {
                 return "Zombie Villager";
             case SOUL_ILLAGER:
                 return "Illager";
+            case SOUL_NECROMANCER:
+                return "Necromancer";
             default:
                 return null;
         }

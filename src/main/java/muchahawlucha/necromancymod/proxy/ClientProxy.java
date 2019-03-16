@@ -3,6 +3,7 @@ package muchahawlucha.necromancymod.proxy;
 import muchahawlucha.necromancymod.client.NecromancyTab;
 import muchahawlucha.necromancymod.common.CommonProxy;
 import muchahawlucha.necromancymod.common.block.ModBlocks;
+import muchahawlucha.necromancymod.common.entity.ModEntities;
 import muchahawlucha.necromancymod.common.item.ModItems;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -22,6 +23,7 @@ public class ClientProxy extends CommonProxy {
     @Override
     public void preInit(FMLPreInitializationEvent e) {
         super.preInit(e);
+        ModEntities.initModels();
     }
 
     @Override

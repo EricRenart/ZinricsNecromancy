@@ -2,6 +2,7 @@ package muchahawlucha.necromancymod.common;
 
 import muchahawlucha.necromancymod.common.block.BlockOnyxOre;
 import muchahawlucha.necromancymod.common.block.ModBlocks;
+import muchahawlucha.necromancymod.common.entity.ModEntities;
 import muchahawlucha.necromancymod.common.item.ItemNecromancersStaff;
 import muchahawlucha.necromancymod.common.item.ItemOnyxGem;
 import muchahawlucha.necromancymod.common.item.ItemSoulGemBase;
@@ -36,6 +37,8 @@ public class CommonProxy {
     public void preInit(FMLPreInitializationEvent e) {
         // register ore generator
         GameRegistry.registerWorldGenerator(new ModWorldGen(),3);
+
+        ModEntities.init();
 
         // init configs
         File dir = e.getModConfigurationDirectory();
