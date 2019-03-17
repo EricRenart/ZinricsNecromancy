@@ -4,3 +4,5 @@ item.necromancymod.necromancersstaff.name=Necromancer's Staff
 item.necromancymod.soulgem.name=Soul Gem
 #blocks
 tile.necromancymod.onyxore.name=Onyx Ore
+#entity
+entity.necromancer.name=Necromancy
